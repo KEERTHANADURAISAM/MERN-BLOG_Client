@@ -1,0 +1,117 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    font-family: 'Lora', serif;
+    color: #444;
+    background-color: #F4EDDB;
+}
+
+.hero-left {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-title h1 {
+    font-size: 70px;
+    color: rgb(225, 5, 141); /* Your old color */
+    margin-bottom: 10px;
+}
+
+.hero-title h2 {
+    font-size: 45px;
+    color: #444; /* Your old color */
+    margin-bottom: 10px;
+}
+
+.hero-title p {
+    font-size: 25px;
+    color: #444; /* Your old color */
+    margin-bottom: 20px;
+}
+
+.hero-title .highlight {
+    color: rgb(225, 5, 141); /* Your old color */
+    font-weight: bold;
+}
+
+.hero-button {
+    background-color: rgb(249, 139, 207); /* Your old button color */
+    color: black; /* Your old text color */
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none; /* Added border like in your old CSS */
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: rgb(255, 255, 255); /* Your old hover color */
+    color:rgb(235, 0, 235);
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;
+    margin-right: 10%;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero-title h1 {
+        font-size: 50px;
+    }
+
+    .hero-title h2 {
+        font-size: 30px;
+    }
+
+    .hero-title p {
+        font-size: 20px;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-title h1 {
+        font-size: 40px;
+    }
+
+    .hero-title h2 {
+        font-size: 25px;
+    }
+
+    .hero-title p {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+}
